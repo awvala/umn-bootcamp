@@ -1,0 +1,19 @@
+https://www.codeschool.com/courses/building-blocks-of-express-js
+
+https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters
+
+https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4
+
+Routing... 
+
+
+hot-restaurant.herokuapp.com.
+
+ask all students to make a Reservation request on the website.
+
+http://hot-restaurant.herokuapp.com/tables
+
+http://hot-restaurant.herokuapp.com/api/tables
+
+http://hot-restaurant.herokuapp.com/api/waitlist
+
