@@ -6,7 +6,7 @@
 // =============================================================
 var Book = require("../models/book.js");
 
-
+console.log("After model");
 // Routes
 // =============================================================
 module.exports = function(app) {
@@ -23,15 +23,17 @@ module.exports = function(app) {
   app.get("/api/:book", function(req, res) {
     Book.findOne({
       where: {
-        title: book
+        title: req.params.book
       }
-    })
+    }).then(function(results) {
+      res.json(results);
+    });
   });
 
   // Add sequelize code to get all books of a specific genre and return them as JSON
   app.get("/api/genre/:genre", function(req, res) {
-   // Book.findAll
-  });
+   //Book.findAll({
+   })
 
   // Add sequelize code to get all books from a specific author and return them as JSON
   app.get("/api/author/:author", function(req, res) {
@@ -50,7 +52,14 @@ module.exports = function(app) {
 
   // Add sequelize code to create a book
   app.post("/api/new", function(req, res) {
-//Book.Create
+    Book.Create({
+      title: ,
+      author: ,
+      genre: ,
+      pages: ,
+      createdAt: ,
+      UpdatedAt:
+    })
   });
 
   // Add sequelize code to delete a book
